@@ -56,6 +56,7 @@ public class FetchServiceBase {
         return new Cache(context.getApplicationContext().getCacheDir(), cacheSize);
     }
 
+
     public FetchServiceInterface getFetcherService(Context context) {
         return getRestAdapter(context).create(FetchServiceInterface.class);
     }
